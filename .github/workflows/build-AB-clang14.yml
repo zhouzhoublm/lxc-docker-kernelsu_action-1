@@ -61,8 +61,8 @@ jobs:
     - name: 添加runc补丁
       run: |
         cd $GITHUB_WORKSPACE/kernel_workspace
-        wget https://github.com/fate-think/LXC-DOCKER-KernelSU_Action/releases/download/1.0.0/runcpatch.sh
-        chmod a+x runcpatch.sh
+        wget https://github.com/liangsai12/Android-Kernel-Builder-chopin/releases/download/1.0.0/lxc-docker-config.sh
+        chmod a+x lxc-docker-config.sh
         if [ -f android-kernel/kernel/cgroup.c ]; then
         ./runcpatch.sh android-kernel/kernel/cgroup.c               
         fi
